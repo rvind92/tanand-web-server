@@ -40,7 +40,7 @@ module.exports = function(sequelize, DataTypes) {
 				}
 			}
 		},
-		instanceMethods: {
+		instanceMethods:{
 			toPublicJSON: function() {
 				var json = this.toJSON();
 				return _.pick(json, 'id,', 'email', 'createdAt', 'updatedAt');
