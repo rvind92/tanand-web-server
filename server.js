@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3030;
 app.use(bodyParser.json());
 
 app.get('/', function(request, response) {
-	response.send('Tanand Web Server Root');
+	response.send('Hello Franky and CK');
 });
 
 app.post('/users', function(request, response) {
@@ -49,3 +49,9 @@ app.post('/users/login', function(request, response) {
 app.listen(PORT, function() {
 	console.log('Server has started at ' + PORT + '!');
 });
+
+
+
+
+
+
